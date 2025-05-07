@@ -1,41 +1,48 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 40px;
+    background-color: #191919;
+    margin: 10;
+    padding-top: 70px;  /* מרווח כדי שהתוכן לא יתחבא מאחורי התפריט */
     line-height: 1.8;
     direction: rtl;
 }
 
 h1 {
-    color: #2c3e50;
+    color: #007af4;
 }
 
 h2, h3 {
-    color: #34495e;
+    color: #006ad4;
 }
 
 ul {
-    background: #fff;
+    background: #787878;
     padding: 20px;
     border-radius: 8px;
     list-style-type: square;
 }
 
 p {
-    background: #fff;
+    background: #787878;
     padding: 15px;
     border-radius: 8px;
 }
 
 /* סרגל ניווט */
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     list-style: none;
-    padding: 10px;
-    background-color: #2c3e50;
-    border-radius: 8px;
+    margin: 0;
+    padding: 5px 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #5e0053;
+    border-bottom: 2px solid #36003d;
+    position: fixed;      /* זה הופך את התפריט לנייד */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navbar li a {
@@ -60,7 +67,7 @@ p {
 
 .navbar a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #006dd9;
     font-weight: bold;
     transition: color 0.3s;
 }
