@@ -88,3 +88,57 @@ canvas {
     margin-top: 20px;
     border-radius: 8px;
 }
+
+
+
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.lesson {
+    background-color: #35004e;
+    border-right: 5px solid #4a90e2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lesson h2 {
+    color: #4a90e2;
+}
+
+.cta {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #35004e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cta a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#course_background
+{
+    background: linear-gradient(135deg, #340043, #0e000f);
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
