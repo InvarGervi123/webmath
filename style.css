@@ -136,6 +136,14 @@ footer {
     padding: 10px;
 }
 
+#index_background {
+    background: linear-gradient(135deg, #080400, #090705, #202020);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
 #course_background {
     background: linear-gradient(135deg, #3e006e, #0f0023, #2c003b);
     background-size: 400% 400%;
