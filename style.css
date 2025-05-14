@@ -136,33 +136,40 @@ footer {
     padding: 10px;
 }
 
-#course_background
-{
-    background: linear-gradient(135deg, #340043, #0e000f);
+#course_background {
+    background: linear-gradient(135deg, #3e006e, #0f0023, #2c003b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     min-height: 100vh;
     padding-bottom: 20px;
 }
-#about_background
-{
-    background: linear-gradient(135deg, #001f43, #0a005a);
+
+#about_background {
+    background: linear-gradient(135deg, #003c6e, #001427, #00334e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     min-height: 100vh;
     padding-bottom: 20px;
 }
-#contact_background
-{
-    background: linear-gradient(135deg, #4c6800, #51a100);
+
+#contact_background {
+    background: linear-gradient(135deg, #5a9e00, #2e4d00, #70bf00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     min-height: 100vh;
     padding-bottom: 20px;
 }
-#practice_background
-{
-    background: linear-gradient(135deg, #a20000, #0e000f);
+
+#practice_background {
+    background: linear-gradient(135deg, #ff3c3c, #320000, #7a0000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     min-height: 100vh;
     padding-bottom: 20px;
 }
-#course_background
-{
-    background: linear-gradient(135deg, #340043, #0e000f);
-    min-height: 100vh;
-    padding-bottom: 20px;
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
