@@ -32,18 +32,20 @@ p {
 .navbar {
     list-style: none;
     margin: 0;
-    padding: 5px 10px;
+    padding: 10px 20px;
     display: flex;
     gap: 20px;
     justify-content: center;
-    background-color: #5e0053;
-    border-bottom: 2px solid #36003d;
-    position: fixed;      /* זה הופך את התפריט לנייד */
+    background: linear-gradient(135deg, #1a0c00cc, #331a00cc, #662b00cc); /* שקיפות עם cc */
+    border-bottom: 1px solid #994d00;
+    backdrop-filter: blur(6px); /* טשטוש רקע אלגנטי */
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1000;
 }
+
 
 .navbar li a {
     color: white;
