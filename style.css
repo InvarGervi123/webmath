@@ -1,122 +1,124 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #191919;
-    margin: 10;
-    padding-top: 70px;  /* מרווח כדי שהתוכן לא יתחבא מאחורי התפריט */
-    line-height: 1.8;
-    direction: rtl;
+    font-family: Arial, sans-serif; /* קובע את סוג הגופן של כל הדף */
+    background-color: #191919; /* צבע רקע כהה */
+    margin: 10; /* שוליים חיצוניים */
+    padding-top: 70px; /* מרווח עליון כדי שהתוכן לא יתחבא מאחורי תפריט */
+    line-height: 1.8; /* מרווח בין שורות הטקסט */
+    direction: rtl; /* טקסט מימין לשמאל (עבור עברית) */
 }
 
 h1 {
-    color: #007af4;
+    color: #007af4; /* צבע לכותרות ראשיות */
 }
 
 h2, h3 {
-    color: #006ad4;
+    color: #006ad4; /* צבע לכותרות משנה */
 }
 
 ul {
-    background: #787878;
-    padding: 20px;
-    border-radius: 8px;
-    list-style-type: square;
+    background: #787878; /* צבע רקע לרשימות */
+    padding: 20px; /* ריווח פנימי */
+    border-radius: 8px; /* פינות מעוגלות */
+    list-style-type: square; /* צורת בולטים מרובעים */
 }
 
 p {
-    background: #787878;
-    padding: 15px;
-    border-radius: 8px;
+    background: #787878; /* צבע רקע לפסקאות */
+    padding: 15px; /* ריווח פנימי */
+    border-radius: 8px; /* פינות מעוגלות */
 }
 
-/* סרגל ניווט */
+/* סרגל ניווט - עיצוב מתקדם */
 .navbar {
-    list-style: none;
+    list-style: none; /* ביטול נקודות ברשימה */
     margin: 0;
     padding: 10px 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    background: linear-gradient(135deg, #1a0c00cc, #331a00cc, #662b00cc); /* שקיפות עם cc */
-    border-bottom: 1px solid #994d00;
-    backdrop-filter: blur(6px); /* טשטוש רקע אלגנטי */
-    position: fixed;
+    display: flex; /* יישור אלמנטים בשורה */
+    gap: 20px; /* רווח בין קישורים */
+    justify-content: center; /* מיקום במרכז */
+    background: linear-gradient(135deg, #1a0c00cc, #331a00cc, #662b00cc); /* גרדיאנט כהה עם שקיפות */
+    border-bottom: 1px solid #994d00; /* קו תחתון */
+    backdrop-filter: blur(6px); /* טשטוש רקע */
+    position: fixed; /* תפריט נצמד לראש הדף */
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* כדי שיישאר מעל שאר האלמנטים */
 }
 
-
 .navbar li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}.navbar {
+    color: white; /* צבע טקסט לקישורים */
+    text-decoration: none; /* ביטול קו תחתון */
+    font-weight: bold; /* טקסט מודגש */
+}
+
+/* תפריט נוסף - גרסה נוספת של navbar */
+.navbar {
     list-style: none;
     padding: 0;
     margin: 0 0 30px 0;
     display: flex;
     gap: 20px;
     justify-content: center;
-    background-color: #1d002a;
+    background-color: #1d002a; /* צבע רקע כהה יותר */
     border-radius: 8px;
     padding: 10px;
 }
 
 .navbar li {
-    display: inline;
+    display: inline; /* קישורים בשורה */
 }
 
 .navbar a {
     text-decoration: none;
-    color: #006dd9;
+    color: #006dd9; /* צבע קישור */
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s; /* שינוי צבע הדרגתי */
 }
 
 .navbar a:hover {
-    color: #0077cc;
+    color: #0077cc; /* צבע חדש במעבר עכבר */
 }
-
 
 .navbar li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* קו תחתון במעבר עכבר */
 }
 
-/* עיצוב Canvas */
+/* עיצוב אזור ציור - canvas */
 canvas {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #fff; /* רקע לבן */
+    border: 1px solid #ccc; /* מסגרת אפורה */
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* פינות מעוגלות */
 }
 
-
-
-
+/* כותרת עליונה */
 header h1 {
     margin-bottom: 10px;
 }
 
+/* תוכן ראשי */
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    max-width: 800px; /* רוחב מקסימלי */
+    margin: auto; /* מיקום במרכז */
 }
 
+/* עיצוב בלוק של שיעור */
 .lesson {
-    background-color: #35004e;
-    border-right: 5px solid #4a90e2;
+    background-color: #35004e; /* רקע כהה עם גוון סגול */
+    border-right: 5px solid #4a90e2; /* קו בצד ימין */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* צל */
 }
 
 .lesson h2 {
-    color: #4a90e2;
+    color: #4a90e2; /* צבע כותרת שיעור */
 }
 
+/* קריאה לפעולה (Call to Action) */
 .cta {
     text-align: center;
     font-size: 1.2em;
@@ -131,6 +133,7 @@ main {
     font-weight: bold;
 }
 
+/* תחתית הדף */
 footer {
     background-color: #333;
     color: white;
@@ -138,14 +141,16 @@ footer {
     padding: 10px;
 }
 
+/* רקע לעמוד הראשי */
 #index_background {
-    background: linear-gradient(135deg, #080400, #090705, #202020);
+    background: linear-gradient(135deg, #080400, #090705, #202020); /* גרדיאנט כהה */
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 15s ease infinite; /* אנימציית רקע זז */
     min-height: 100vh;
     padding-bottom: 20px;
 }
 
+/* רקע לעמוד קורסים */
 #course_background {
     background: linear-gradient(135deg, #3e006e, #0f0023, #2c003b);
     background-size: 400% 400%;
@@ -154,6 +159,7 @@ footer {
     padding-bottom: 20px;
 }
 
+/* רקע לעמוד אודות */
 #about_background {
     background: linear-gradient(135deg, #003c6e, #001427, #00334e);
     background-size: 400% 400%;
@@ -162,6 +168,7 @@ footer {
     padding-bottom: 20px;
 }
 
+/* רקע לעמוד יצירת קשר */
 #contact_background {
     background: linear-gradient(135deg, #5a9e00, #2e4d00, #70bf00);
     background-size: 400% 400%;
@@ -170,6 +177,7 @@ footer {
     padding-bottom: 20px;
 }
 
+/* רקע לעמוד תרגולים */
 #practice_background {
     background: linear-gradient(135deg, #ff3c3c, #320000, #7a0000);
     background-size: 400% 400%;
@@ -178,6 +186,7 @@ footer {
     padding-bottom: 20px;
 }
 
+/* אנימציה עבור רקעים מתחלפים */
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
