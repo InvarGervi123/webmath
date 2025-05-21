@@ -1,62 +1,69 @@
-````markdown
+---
+
 # WebMath
 
-WebMath is a lightweight educational math website created for practicing and visualizing mathematical concepts using HTML and CSS. It features a user-friendly interface and responsive design, making it suitable for students and beginners.
+**WebMath** is a sleek and responsive web application designed to help users practice and enhance their math skills. Built with HTML and CSS, it offers an intuitive interface for engaging with various math exercises.
 
-## 🌐 Live Preview
+## 🔧 Features
 
-To run the project locally, simply open the `index.html` file in your browser:
+* **Interactive Practice:** Engage with a variety of math problems to sharpen your skills.
+* **Course Overview:** Browse through available courses to find topics of interest.
+* **About & Contact Pages:** Learn more about the project and get in touch.
+
+## 🚀 Getting Started
+
+Follow these steps to get the project up and running locally:
+
+### 1. Clone the Repository
 
 ```bash
-# Open index.html with your default browser
-double-click index.html
-# Or, if using a terminal:
-xdg-open index.html    # Linux
-open index.html        # macOS
-start index.html       # Windows
-````
+git clone https://github.com/InvarGervi123/webmath.git
+```
 
-No backend or installation is needed. The site is built purely with HTML and CSS.
+### 2. Navigate to the Project Directory
 
-## 📁 Project Structure
+```bash
+cd webmath
+```
+
+### 3. Open in Your Browser
+
+You can open the `index.html` file directly in your preferred web browser:
+
+* **Option 1:** Double-click the `index.html` file.
+* **Option 2:** Right-click the file and select "Open with" followed by your browser of choice.
+
+> **Note:** Since this is a static site, no additional setup or dependencies are required.
+
+## 🛠️ Project Structure
 
 ```
 webmath/
-├── index.html         # Main homepage
-├── style.css          # Styling for the website
-├── /pages             # Additional pages for different math topics
-├── /img               # Image assets
-└── README.md
+├── index.html         # Main landing page
+├── about.html         # Information about the project
+├── contact.html       # Contact form and details
+├── courses.html       # Overview of available courses
+├── practice.html      # Interactive practice problems
+└── style.css          # Styling for the website
 ```
 
-## ✨ Features
+## 📋 Changelog
 
-* Clean, dark-themed UI
-* Colorful animated backgrounds per page
-* Easy navigation bar for switching between topics
-* RTL (Right-to-Left) text direction support (for Hebrew content)
-* Responsive layout for multiple devices
+Stay updated with the latest changes:
 
-## 🛠️ How to Edit
+* **v1.0.0** (2025-05-21)
 
-You can edit content by opening `.html` files in the `/pages` folder.
-Styling changes can be made in `style.css`.
+  * Initial release with core pages: Home, About, Contact, Courses, and Practice.
+  * Implemented responsive design for various devices.
+  * Basic styling applied via `style.css`.
 
-## 📝 Recent Updates
+## 📬 Feedback & Contributions
 
-Here’s a summary of recent updates pulled from the [commits](https://github.com/InvarGervi123/webmath/commits/main):
+We welcome feedback and contributions! If you have suggestions or would like to contribute:
 
-* **\[May 21, 2025]** Improved visual layout and design organization for CSS.
-* **\[May 20, 2025]** Added animated gradient backgrounds for individual topic pages.
-* **\[May 19, 2025]** Updated structure with separate HTML files for each subject page (e.g. Algebra, Trigonometry, etc.).
-* **\[May 18, 2025]** Created navbar with custom styling and improved RTL layout support.
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Commit your changes with clear messages.
+4. Submit a pull request for review.
 
-## 🚀 To-Do / Ideas
-
-* Add JavaScript-based interactivity (e.g. quizzes or calculators)
-* Make it PWA (Progressive Web App)
-* Support more math topics with visuals and animations
-
-## 📜 License
-
-This project is open-source and free to use under the [MIT License](LICENSE).
+---
