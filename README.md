@@ -1,5 +1,3 @@
----
-
 # WebMath
 
 **WebMath** is a sleek and responsive web application designed to help users practice and enhance their math skills. Built with HTML and CSS, it offers an intuitive interface for engaging with various math exercises.
