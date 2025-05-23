@@ -143,12 +143,21 @@ footer {
 
 /* רקע לעמוד הראשי */
 #index_background {
-    background: linear-gradient(135deg, #080400, #090705, #202020); /* גרדיאנט כהה */
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite; /* אנימציית רקע זז */
-    min-height: 100vh;
-    padding-bottom: 20px;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 0, 255, 0.1) 0,
+      rgba(255, 0, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    linear-gradient(135deg, #080400, #090705, #202020); 
+  background-size: 100% 100%, 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  padding-bottom: 20px;
 }
+
 
 /* רקע לעמוד קורסים */
 #course_background {
@@ -192,3 +201,4 @@ footer {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
