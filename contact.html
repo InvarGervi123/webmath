@@ -18,6 +18,20 @@
         </ul>
     </nav>
 
+    <div class="container">
+    <h2>צור קשר</h2>
+    <form action="send-message.php" method="POST">
+      <label for="name">שם מלא</label>
+      <input type="text" id="name" name="name" placeholder="הכנס את שמך" required />
+
+      <label for="email">אימייל</label>
+      <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required />
+
+      <label for="message">הודעה</label>
+      <textarea id="message" name="message" placeholder="כתוב את הודעתך כאן..." rows="5" required></textarea>
+
+      <button type="submit">שלח</button>
+
     <section class="cta">
         <p>👉 רוצה להתקדם? <a href="#">התחל שיעור ראשון עכשיו!</a></p>
     </section>
