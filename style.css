@@ -1,31 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif; /* קובע את סוג הגופן של כל הדף */
+    font-family: 'Alef', Arial, sans-serif; /* קובע את סוג הגופן של כל הדף */
     background-color: #191919; /* צבע רקע כהה */
-    margin: 10; /* שוליים חיצוניים */
+    color: #f0f0f0; /* צבע טקסט כללי */
+    margin: 0; /* שוליים חיצוניים */
     padding-top: 70px; /* מרווח עליון כדי שהתוכן לא יתחבא מאחורי תפריט */
     line-height: 1.8; /* מרווח בין שורות הטקסט */
     direction: rtl; /* טקסט מימין לשמאל (עבור עברית) */
 }
 
-h1 {
-    color: #007af4; /* צבע לכותרות ראשיות */
-}
 
 h2, h3 {
     color: #006ad4; /* צבע לכותרות משנה */
 }
 
 ul {
-    background: #787878; /* צבע רקע לרשימות */
+    background: #5d5d5d; /* צבע רקע לרשימות */
     padding: 20px; /* ריווח פנימי */
     border-radius: 8px; /* פינות מעוגלות */
     list-style-type: square; /* צורת בולטים מרובעים */
+    margin-bottom: 20px;
 }
 
 p {
-    background: #787878; /* צבע רקע לפסקאות */
+    background: #5d5d5d; /* צבע רקע לפסקאות */
     padding: 15px; /* ריווח פנימי */
     border-radius: 8px; /* פינות מעוגלות */
+    margin-bottom: 20px;
 }
 
 /* סרגל ניווט - עיצוב מתקדם */
@@ -39,6 +41,7 @@ p {
     background: linear-gradient(135deg, #1a0c00cc, #331a00cc, #662b00cc); /* גרדיאנט כהה עם שקיפות */
     border-bottom: 1px solid #994d00; /* קו תחתון */
     backdrop-filter: blur(6px); /* טשטוש רקע */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     position: fixed; /* תפריט נצמד לראש הדף */
     top: 0;
     right: 0;
@@ -196,4 +199,18 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #007af4; /* צבע לכותרות ראשיות */
+    margin-top: 0;
 }
