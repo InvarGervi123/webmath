@@ -238,37 +238,16 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.face {
+.formula {
   position: fixed;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #fff;
-  border-radius: 60% 40% 60% 40%;
+  width: 150px;
+  font-size: 1.1em;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  line-height: 1.4;
   pointer-events: none;
   z-index: -1;
 }
 
-.face .eye {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-
-.face .eye.left { top: 35px; left: 30px; }
-.face .eye.right { top: 35px; right: 30px; }
-
-.face .mouth {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  width: 60px;
-  height: 30px;
-  border: 2px solid #fff;
-  border-top: none;
-  border-radius: 0 0 40px 40px;
-}
-
-.left-face { top: 25%; left: 10px; transform: rotate(-6deg); }
-.right-face { top: 55%; right: 10px; transform: rotate(6deg); }
+.left-formula { top: 25%; left: 10px; transform: rotate(-6deg); }
+.right-formula { top: 55%; right: 10px; transform: rotate(6deg); text-align: right; }
