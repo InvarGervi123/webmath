@@ -5,14 +5,46 @@ body {
     padding-top: 70px; /* מרווח עליון כדי שהתוכן לא יתחבא מאחורי תפריט */
     line-height: 1.8; /* מרווח בין שורות הטקסט */
     direction: rtl; /* טקסט מימין לשמאל (עבור עברית) */
+    position: relative; /* מאפשר שכבת רקע */
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 40px),
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 5px, transparent 6px),
+      radial-gradient(circle at 70% 70%, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 5px, transparent 6px);
+    background-size: 100% 100%, 60px 60px, 60px 60px;
+    animation: floatShapes 20s linear infinite;
+    z-index: -1;
 }
 
 h1 {
-    color: #007af4; /* צבע לכותרות ראשיות */
+    color: #7bdcf4; /* צבע לכותרת ראשית */
+    font-size: 2.2em;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 h2, h3 {
-    color: #006ad4; /* צבע לכותרות משנה */
+    color: #82b7ff; /* צבע לכותרות משנה */
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
 }
 
 ul {
@@ -73,8 +105,8 @@ p {
 
 /* עיצוב אזור ציור - canvas */
 canvas {
-    background-color: #fff; /* רקע לבן */
-    border: 1px solid #ccc; /* מסגרת אפורה */
+    background-color: #222; /* רקע כהה במקום לבן */
+    border: 1px solid #555; /* מסגרת אפורה כהה */
     margin-top: 20px;
     border-radius: 8px; /* פינות מעוגלות */
 }
@@ -189,11 +221,17 @@ footer {
     100% { background-position: 0% 50%; }
 }
 
+@keyframes floatShapes {
+    0% { background-position: 0 0, 30% 30%, 70% 70%; }
+    50% { background-position: 0 0, 35% 35%, 65% 65%; }
+    100% { background-position: 0 0, 30% 30%, 70% 70%; }
+}
+
 .container {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #222; /* רקע כהה במקום לבן */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
