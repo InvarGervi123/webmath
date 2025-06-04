@@ -144,6 +144,8 @@ main {
     background-color: #15021e;
     padding: 15px;
     border-radius: 8px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .cta a {
@@ -235,3 +237,38 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+
+.face {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #fff;
+  border-radius: 60% 40% 60% 40%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.face .eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.face .eye.left { top: 35px; left: 30px; }
+.face .eye.right { top: 35px; right: 30px; }
+
+.face .mouth {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  width: 60px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-radius: 0 0 40px 40px;
+}
+
+.left-face { top: 25%; left: 10px; transform: rotate(-6deg); }
+.right-face { top: 55%; right: 10px; transform: rotate(6deg); }
