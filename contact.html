@@ -26,14 +26,32 @@
     <form action="send-message.php" method="POST">
       <label for="name">שם מלא</label>
       <input type="text" id="name" name="name" placeholder="הכנס את שמך" required />
-
+        <br>
       <label for="email">אימייל</label>
       <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required />
-
+        <br>
       <label for="message">הודעה</label>
       <textarea id="message" name="message" placeholder="כתוב את הודעתך כאן..." rows="5" required></textarea>
 
       <button type="submit">שלח</button>
+    <table border="1">
+    <tr>
+        <th>שם</th>
+        <th>גיל</th>
+        <th>עיר</th>
+    </tr>
+    <tr>
+        <td>אדם</td>
+        <td>30</td>
+        <td>תל אביב</td>
+    </tr>
+    <tr>
+        <td>מוריה</td>
+        <td>25</td>
+        <td>חיפה</td>
+    </tr>
+    </table>
+
     </form>
     </div>
 
