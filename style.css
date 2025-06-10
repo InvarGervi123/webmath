@@ -164,7 +164,8 @@ footer {
 
 /* רקע לעמוד הראשי */
 #index_background {
-  background-image:
+    /* מחקתי כי אז במסך מחשב עובד פי 3 יותר */
+  /* background-image:
     repeating-linear-gradient(
       45deg,
       rgba(255, 0, 255, 0.1) 0,
@@ -172,7 +173,7 @@ footer {
       transparent 1px,
       transparent 40px
     ),
-    linear-gradient(135deg, #080400, #090705, #202020); 
+    linear-gradient(135deg, #080400, #090705, #202020);  */ 
   background-size: 100% 100%, 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   min-height: 100vh;
