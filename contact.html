@@ -21,39 +21,46 @@
     <div class="formula left-formula">A = (b × h) / 2</div>
     <div class="formula right-formula">A = πr²</div>
 
-    <div class="container">
-    <h2>צור קשר</h2>
-    <form action="send-message.php" method="POST">
-      <label for="name">שם מלא</label>
-      <input type="text" id="name" name="name" placeholder="הכנס את שמך" required />
-        <br>
-      <label for="email">אימייל</label>
-      <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required />
-        <br>
-      <label for="message">הודעה</label>
-      <textarea id="message" name="message" placeholder="כתוב את הודעתך כאן..." rows="5" required></textarea>
+    <div class="contact-container">
+  <h2>צור קשר</h2>
 
-      <button type="submit">שלח</button>
-    <table border="1">
-    <tr>
+  <form action="send-message.php" method="POST" class="contact-form">
+    <label for="name">שם מלא:</label>
+    <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+
+    <label for="email">אימייל:</label>
+    <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required>
+
+    <label for="message">הודעה:</label>
+    <textarea id="message" name="message" rows="5" placeholder="כתוב את הודעתך כאן..." required></textarea>
+
+    <button type="submit">שלח</button>
+  </form>
+
+  <h3>דוגמאות לאנשי קשר</h3>
+  <table class="contact-table">
+    <thead>
+      <tr>
         <th>שם</th>
         <th>גיל</th>
         <th>עיר</th>
-    </tr>
-    <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td>אדם</td>
         <td>30</td>
         <td>תל אביב</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>מוריה</td>
         <td>25</td>
         <td>חיפה</td>
-    </tr>
-    </table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    </form>
-    </div>
 
     
 

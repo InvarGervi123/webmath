@@ -262,3 +262,72 @@ footer {
     width: 400px; /* או גודל אחר */
     z-index: -2;
 }
+
+.contact-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.contact-container h2, .contact-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7bdcf4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #357ab7;
+}
+
+.contact-table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  background-color: #333;
+  color: white;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 12px;
+  border: 1px solid #555;
+  text-align: center;
+}
+
+.contact-table th {
+  background-color: #4a90e2;
+}
