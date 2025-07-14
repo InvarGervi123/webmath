@@ -254,3 +254,11 @@ footer {
 
 .left-formula { top: 25%; left: 10px; transform: rotate(-6deg); }
 .right-formula { top: 55%; right: 10px; transform: rotate(6deg); text-align: right; }
+
+.side-image {
+    position: absolute;
+    top: 100px; /* או כל ערך שימקם אותך נכון אנכית */
+    right: 20px;
+    width: 400px; /* או גודל אחר */
+    z-index: -2;
+}
