@@ -257,11 +257,23 @@ footer {
 
 .side-image {
     position: absolute;
-    top: 100px; /* או כל ערך שימקם אותך נכון אנכית */
+    top: 100px;
     right: 20px;
-    width: 400px; /* או גודל אחר */
+    width: 400px;
     z-index: -2;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    animation: floatUpDown 5s ease-in-out infinite;
+    transition: transform 0.3s ease;
 }
+
+
+/* אנימציה של תנועה למעלה ולמטה */
+@keyframes floatUpDown {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
 
 .contact-container {
   max-width: 600px;
