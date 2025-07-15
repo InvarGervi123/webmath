@@ -24,38 +24,60 @@
     <div class="contact-container">
   <h2>צור קשר</h2>
 
-  <form action="send-message.php" method="POST" class="contact-form">
-    <label for="name">שם מלא:</label>
-    <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+  <form action="send-message.php" method="POST" class="contact-form" enctype="multipart/form-data">
+    <label for="firstName">שם פרטי:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="הכנס את שמך הפרטי" required>
+
+    <label for="lastName">שם משפחה:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="הכנס את שם המשפחה" required>
+
+    <label for="phone">טלפון:</label>
+    <input type="tel" id="phone" name="phone" placeholder="הכנס מספר טלפון" required pattern="[0-9\-+() ]+">
+
+    <label for="birthdate">תאריך לידה:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
 
     <label for="email">אימייל:</label>
     <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required>
+
+    <label for="file">צירוף קובץ:</label>
+    <input type="file" id="file" name="file">
 
     <label for="message">הודעה:</label>
     <textarea id="message" name="message" rows="5" placeholder="כתוב את הודעתך כאן..." required></textarea>
 
     <button type="submit">שלח</button>
+    <button type="reset">איפוס</button>
   </form>
 
   <h3>דוגמאות לאנשי קשר</h3>
-  <table class="contact-table">
+  <table class="contact-table" style="border-collapse:collapse; width:100%; margin-top:1em;">
     <thead>
-      <tr>
-        <th>שם</th>
-        <th>גיל</th>
-        <th>עיר</th>
+      <tr style="background:#f0f0f0;">
+        <th style="border:1px solid #bbb; padding:8px;">שם פרטי</th>
+        <th style="border:1px solid #bbb; padding:8px;">שם משפחה</th>
+        <th style="border:1px solid #bbb; padding:8px;">טלפון</th>
+        <th style="border:1px solid #bbb; padding:8px;">תאריך לידה</th>
+        <th style="border:1px solid #bbb; padding:8px;">אימייל</th>
+        <th style="border:1px solid #bbb; padding:8px;">עיר</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>אדם</td>
-        <td>30</td>
-        <td>תל אביב</td>
+        <td style="border:1px solid #bbb; padding:8px;">אדם</td>
+        <td style="border:1px solid #bbb; padding:8px;">כהן</td>
+        <td style="border:1px solid #bbb; padding:8px;">050-1234567</td>
+        <td style="border:1px solid #bbb; padding:8px;">1995-01-01</td>
+        <td style="border:1px solid #bbb; padding:8px;">adam@example.com</td>
+        <td style="border:1px solid #bbb; padding:8px;">תל אביב</td>
       </tr>
       <tr>
-        <td>מוריה</td>
-        <td>25</td>
-        <td>חיפה</td>
+        <td style="border:1px solid #bbb; padding:8px;">מוריה</td>
+        <td style="border:1px solid #bbb; padding:8px;">לוי</td>
+        <td style="border:1px solid #bbb; padding:8px;">052-7654321</td>
+        <td style="border:1px solid #bbb; padding:8px;">2000-05-12</td>
+        <td style="border:1px solid #bbb; padding:8px;">moria@example.com</td>
+        <td style="border:1px solid #bbb; padding:8px;">חיפה</td>
       </tr>
     </tbody>
   </table>
@@ -72,6 +94,8 @@
 
         <footer>
             <p>© 2025 האתר ללימוד מתמטיקה בשפה פשוטה</p>
+            <a href="https://web.whatsapp.com/"><img src="ChatGPT Image Jul 14, 2025, 11_12_37 AM.png" alt="לוגו האתר" class="footer-logo" width="50" height="50"></a>
+            <a href="https://www.instagram.com/"><img src="ChatGPT Image Jul 14, 2025, 11_13_12 AM.png" alt="לוגו האתר" class="footer-logo" width="50" height="50"></a>
         </footer>
     </div>
 </body>
